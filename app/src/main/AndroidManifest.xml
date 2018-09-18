@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.patna.busymechanic.busymechanic"
+    android:versionCode="3"
+    android:versionName="1.3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    android:hardwareAccelerated="true"
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logoicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoicon"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
